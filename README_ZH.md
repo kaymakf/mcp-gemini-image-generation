@@ -78,6 +78,13 @@
    ```
    注意：请将 "你的密钥" 替换为实际的 API 密钥
 
+2. **Cursor 集成**：修改 `cursor.sh` 文件以设置API 密钥和项目目录。
+  * 在 Cursor 设置中，进入 "MCP" 选项卡，点击 `添加新的 MCP 服务器`，
+  * 为服务器随便取个名字，并将命令设置为 `sh /绝对路径/到/cursor.sh`。
+  * 等待服务器启动，然后就可以看到服务器和可用工具。
+  * 之后使用 agent 时，它会自己判断是否使用这些工具。
+  <img width="1240" alt="image" src="https://github.com/user-attachments/assets/b41016fe-a0f8-4029-8f5d-82f25c606a65" />
+
 ## 致谢
 
 - [Google Gemini](https://aistudio.google.com/)：图像生成
