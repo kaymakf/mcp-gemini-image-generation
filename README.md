@@ -1,0 +1,72 @@
+# Image Toolkit MCP Server
+
+A comprehensive MCP (Model Context Protocol) server that provides advanced image generation, modification, and processing capabilities using various AI services and APIs.
+
+##  Features
+
+- **Image Generation**: Create images from text prompts using Google's Gemini models
+- **Image Modification**: Transform existing images based on text instructions
+- **Background Removal**: Remove backgrounds from images using the remove.bg API
+- **Image Hosting**: Share generated images via FreeImage.host
+- **Resource Management**: Track and manage generated and uploaded images
+
+## Requirements
+
+- Python 3.11 or higher
+- Required API keys:
+  - Google Gemini API key [Get key](https://aistudio.google.com/apikey)
+  - FreeImage.host API key [Get key](https://freeimage.host/page/api)
+  - Remove.bg API key [Get key](https://www.remove.bg/dashboard#api-key)
+
+##  Installation
+
+1. Clone this repository:
+   ```sh
+   git https://github.com/Kira-Pgr/Image-Toolkit-MCP-Server.git
+   cd Image-Toolkit-MCP-Server
+   ```
+
+2. Install UV (if not already installed):
+   ```sh
+   # On macOS and Linux.
+   curl -LsSf https://astral.sh/uv/install.sh | sh
+   # On Windows.
+   powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+   # With pip.
+   pip install uv
+   ```
+
+3. Install dependencies using UV:
+   ```sh
+   uv pip install -r requirements.txt
+   ```
+
+##  Usage
+
+1. **Claude Desktop Integration**: Add the following configuration to your `claude_desktop_config.json` file to run the server directly from Claude Desktop:
+   ```json
+   "Image Toolkit MCP": {
+     "command": "uv",
+     "args": [
+       "--directory",
+       "/project/dir/",
+       "run",
+       "mcp",
+       "run",
+       "/project/dir/server.py"
+     ],
+     "env": {
+       "GEMINI_API_KEY": "key",
+       "FREEIMAGE_API_KEY": "key",
+       "REMOVEBG_API_KEY": "key"
+     }
+   }
+   ```
+   Note: Replace the placeholder `"key"` values with your actual API keys.
+
+## Acknowledgements
+
+- [Google Gemini](https://aistudio.google.com/): For the image generation capabilities
+- [Remove.bg](https://www.remove.bg/): For background removal services
+- [FreeImage.host](https://freeimage.host/): For image hosting services
+- [MCP](https://modelcontextprotocol.io/introduction): For the Model Context Protocol
