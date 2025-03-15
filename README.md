@@ -1,6 +1,16 @@
 # Image Toolkit MCP Server
+English | [中文](README_ZH.md)
+A MCP (Model Context Protocol) server that provides advanced image generation, modification, and processing capabilities using various AI services and APIs.
+## Demo
+Original Image  
+<img src="https://github.com/user-attachments/assets/a987b4c4-3bba-4a52-a2a8-9f088868d857" width="300"/>  
 
-A comprehensive MCP (Model Context Protocol) server that provides advanced image generation, modification, and processing capabilities using various AI services and APIs.
+Prompt: **add a coat to the dog**  
+<img src="https://github.com/user-attachments/assets/6de3cdd1-a3b9-422b-95dd-12e2172f6f1d" width="300"/>  
+
+Prompt: **Add a hat to it**  
+<img src="https://github.com/user-attachments/assets/047289ca-f3d0-4d16-acf7-09d5af641c68" width="300"/>  
+ 
 
 ##  Features
 
