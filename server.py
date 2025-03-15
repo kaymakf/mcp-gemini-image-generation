@@ -404,6 +404,11 @@ def generate_image_from_text(
 ) -> str:
     """
     Generate an image using Gemini based on a text prompt only (no input image required).
+    Here's how prompt should be written like, you need to expand on the details:
+    - "Close-up photograph of a pair of mismatched socks with different patterns, on a dark blue velvet wooden background."
+    - "Dreamy pastel landscape, soft lines, gentle colors, fluffy clouds, rainbow mountains, minimalist"
+    - "Group of aliens visiting a farmer's market, trying to understand human food culture. Lots of fresh fruits and vegetables everywhere"
+    - "Renaissance vampire king, flower-studded hat, flared nostrils, pink hue, soft gaze, portrait, candid, quarter-turn"
     The image will be uploaded to freeimage.host and can be embedded in markdown using ![image](url) format.
     Use this tool when you need to create a completely new image from a text description.
     You must provide the image url in markdown format in your response.
