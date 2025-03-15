@@ -245,7 +245,7 @@ def generate_image_from_url(
     
     Parameters:
     - image_url: URL of the image to download and modify
-    - prompt: Text instruction for how to modify the image
+    - prompt: Text instruction for how to modify the image, this prompt should be simple and concise, like "add sth to sth" or "remove sth" or "change sth to sth"
     - mime_type: MIME type of the image (default: image/jpeg)
     - temperature: Creativity parameter (0.0-1.0)
     - top_p: Token selection parameter (0.0-1.0)
