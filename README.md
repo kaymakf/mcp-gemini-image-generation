@@ -80,6 +80,11 @@ Prompt: **Add a hat to it**
    }
    ```
    Note: Replace the placeholder `"key"` values with your actual API keys.
+2. **Cursor Integration**: Modify the `cursor.sh` file to set your API keys and project directory.
+  In cursor settings, go to the "MCP" tab, click on `Add new MCP server`,
+  Name the server whatever you want, and set the command to `sh /absolute/path/to/cursor.sh`.\
+  Wait for the server to start, and you can see the server and available tools.
+  Then when you use the agent, it would automatically detect whether use the tools.
 
 ## Acknowledgements
 
