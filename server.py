@@ -1,8 +1,8 @@
 # server.py
 """
-Image Toolkit MCP
+PromptShopMCP
 
-This MCP server provides a comprehensive toolkit for image generation, modification, and processing capabilities using various AI and API services.
+A MCP server that allows you to edit photos using simple text commands. Transform images like a professional designer by just describing what you want in natural language.
 
 Features:
 - Image generation from text prompts using Google's Gemini models
@@ -34,7 +34,7 @@ from mcp.server.fastmcp import Image as MCPImage
 import sys
 
 # Create an MCP server
-mcp = FastMCP("Image Toolkit MCP")
+mcp = FastMCP("PromptShopMCP")
 
 # Directory to store generated images
 IMAGES_DIR = os.path.join(os.getcwd(), "generated_images")

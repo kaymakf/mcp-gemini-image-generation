@@ -1,11 +1,11 @@
-# Image Toolkit MCP Server
+# PromptShopMCP
 
 ![](https://badge.mcpx.dev?type=server 'MCP Server')  
 
 English | [中文](README_ZH.md)   
 
 
-A MCP (Model Context Protocol) server that provides advanced image generation, modification, and processing capabilities using various AI services and APIs.
+A powerful MCP (Model Context Protocol) server that transforms images using simple text commands. Edit photos like a professional designer - just describe what you want in natural language!
 ## Demo
 Original Image  
 <img src="https://github.com/user-attachments/assets/a987b4c4-3bba-4a52-a2a8-9f088868d857" width="300"/>  
@@ -62,7 +62,7 @@ Prompt: **Add a hat to it**
 
 1. **Claude Desktop Integration**: Add the following configuration to your `claude_desktop_config.json` file to run the server directly from Claude Desktop:
    ```json
-   "Image Toolkit MCP": {
+   "PromptShopMCP": {
      "command": "uv",
      "args": [
        "--directory",

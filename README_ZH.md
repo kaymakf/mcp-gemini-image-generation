@@ -1,8 +1,10 @@
-# AI P图 MCP Server
+# PromptShopMCP
+
+![](https://badge.mcpx.dev?type=server 'MCP Server') 
 
 [English](README.md) | 中文
 
-一个基于 MCP（模型上下文协议）的服务器，通过多种AI服务和API提供高级图像生成、修改和处理能力。
+一个强大的基于 MCP（模型上下文协议）的服务器，通过简单的文字指令变换图像。像专业设计师一样编辑照片 - 只需用自然语言描述您想要的效果！
 
 ## 演示案例
 原图  
@@ -59,7 +61,7 @@
 
 1. **Claude Desktop 集成**：在 `claude_desktop_config.json` 中添加以下配置，即可直接从 Claude Desktop 启动服务：
    ```json
-   "Image Toolkit MCP": {
+   "PromptShopMCP": {
      "command": "uv",
      "args": [
        "--directory",
