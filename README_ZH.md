@@ -50,6 +50,8 @@
 
 3. 使用 UV 安装依赖：
    ```sh
+   uv venv --python=python3.11
+   source .venv/bin/activate #Windows上 .venv/Scripts/activate 
    uv pip install -r requirements.txt
    ```
 

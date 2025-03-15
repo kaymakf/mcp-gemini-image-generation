@@ -52,6 +52,8 @@ Prompt: **Add a hat to it**
 
 3. Install dependencies using UV:
    ```sh
+   uv venv --python=python3.11
+   source .venv/bin/activate #or .venv/Scripts/activate on Windows
    uv pip install -r requirements.txt
    ```
 
