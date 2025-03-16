@@ -92,7 +92,7 @@
    * 等待服务器启动，然后就可以看到服务器和可用工具。
    * 之后使用 agent 时，它会自己判断是否使用这些工具。
 
-   **Windows用户**：修改 `cursor-templte.bat` 文件以设置API密钥和项目目录。
+   **Windows用户**：修改 `cursor-template.bat` 文件以设置API密钥和项目目录。
 
    * 编辑 `cursor.bat` 文件，设置您的API密钥、项目绝对路径和`uv.exe`所在的目录.
    * 在 Cursor 设置中，进入 "MCP" 选项卡，点击 `添加新的 MCP 服务器`，
