@@ -12,3 +12,6 @@ generated_images/
 uploaded_images/
 
 .vscode/
+.idea/
+
+cursor.bat
