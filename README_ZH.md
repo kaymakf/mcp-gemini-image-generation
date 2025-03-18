@@ -21,17 +21,13 @@
 
 - **图像生成**: 使用 Google Gemini 模型从文本生成图像
 - **图像修改**: 根据文本指令对现有图像进行改造
-- **背景移除**: 通过 remove.bg API 实现智能抠图
-- **图床托管**: 使用 FreeImage.host 分享生成结果
-- **资源管理**: 追踪管理生成和上传的图像资源
+- **资源管理**: 在本地追踪管理生成的图像资源
 
 ## 环境要求
 
 - Python 3.11 或更高版本
-- 需要以下 API 密钥：
+- 需要的 API 密钥：
   - Google Gemini API 密钥 [获取地址](https://aistudio.google.com/apikey)
-  - FreeImage.host API 密钥 [获取地址](https://freeimage.host/page/api)
-  - Remove.bg API 密钥 [获取地址](https://www.remove.bg/dashboard#api-key)
 
 ## 安装指南
 
@@ -75,9 +71,7 @@
        "/项目/路径/server.py"
      ],
      "env": {
-       "GEMINI_API_KEY": "你的密钥",
-       "FREEIMAGE_API_KEY": "你的密钥",
-       "REMOVEBG_API_KEY": "你的密钥"
+       "GEMINI_API_KEY": "你的密钥"
      }
    }
    ```
@@ -105,6 +99,4 @@
 ## 致谢
 
 - [Google Gemini](https://aistudio.google.com/)：图像生成
-- [Remove.bg](https://www.remove.bg/)：背景移除服务
-- [FreeImage.host](https://freeimage.host/)：图床
 - [MCP](https://modelcontextprotocol.io/introduction)：模型上下文协议标准

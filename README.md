@@ -4,8 +4,8 @@
 
 English | [中文](README_ZH.md)   
 
-
 A powerful MCP (Model Context Protocol) server that transforms images using simple text commands. Edit photos like a professional designer - just describe what you want in natural language!
+
 ## Demo
 Original Image  
 <img src="https://github.com/user-attachments/assets/a987b4c4-3bba-4a52-a2a8-9f088868d857" width="300"/>  
@@ -21,17 +21,13 @@ Prompt: **Add a hat to it**
 
 - **Image Generation**: Create images from text prompts using Google's Gemini models
 - **Image Modification**: Transform existing images based on text instructions
-- **Background Removal**: Remove backgrounds from images using the remove.bg API
-- **Image Hosting**: Share generated images via FreeImage.host
-- **Resource Management**: Track and manage generated and uploaded images
+- **Resource Management**: Track and manage generated images locally
 
 ## Requirements
 
 - Python 3.11 or higher
-- Required API keys:
+- Required API key:
   - Google Gemini API key [Get key](https://aistudio.google.com/apikey)
-  - FreeImage.host API key [Get key](https://freeimage.host/page/api)
-  - Remove.bg API key [Get key](https://www.remove.bg/dashboard#api-key)
 
 ##  Installation
 
@@ -73,16 +69,14 @@ Prompt: **Add a hat to it**
        "/project/dir/server.py"
      ],
      "env": {
-       "GEMINI_API_KEY": "key",
-       "FREEIMAGE_API_KEY": "key",
-       "REMOVEBG_API_KEY": "key"
+       "GEMINI_API_KEY": "key"
      }
    }
    ```
-   Note: Replace the placeholder `"key"` values with your actual API keys.
+   Note: Replace the placeholder `"key"` value with your actual API key.
 2. **Cursor Integration**:    
    **Linux/macOS**:
-  Modify the `cursor.sh` file to set your API keys and project directory.   
+  Modify the `cursor.sh` file to set your API key and project directory.   
   * In cursor settings, go to the "MCP" tab, click on `Add new MCP server`,   
   * Name the server whatever you want, and set the command to `sh /absolute/path/to/cursor.sh`.   
   * Wait for the server to start, and you can see the server and available tools.   
@@ -90,18 +84,13 @@ Prompt: **Add a hat to it**
   <img width="1240" alt="image" src="https://github.com/user-attachments/assets/b41016fe-a0f8-4029-8f5d-82f25c606a65" />
   
   **Windows**: 
-  Modify the `cursor.bat` file to set your API keys and project directory.   
+  Modify the `cursor.bat` file to set your API key and project directory.   
   * In cursor settings, go to the "MCP" tab, click on `Add new MCP server`,   
   * Name the server whatever you want, and set the command to `cmd /c C:\absolute\path\to\cursor.bat`.   
   * Wait for the server to start, and you can see the server and available tools.   
   * Then when you use the agent, it would automatically detect whether use the tools.   
 
-
-
-
 ## Acknowledgements
 
 - [Google Gemini](https://aistudio.google.com/): For the image generation capabilities
-- [Remove.bg](https://www.remove.bg/): For background removal services
-- [FreeImage.host](https://freeimage.host/): For image hosting services
 - [MCP](https://modelcontextprotocol.io/introduction): For the Model Context Protocol

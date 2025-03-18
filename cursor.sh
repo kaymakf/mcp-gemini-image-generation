@@ -2,8 +2,6 @@
 
 # Set environment variables from .cursor/mcp.json
 export GEMINI_API_KEY="your_gemini_key"
-export FREEIMAGE_API_KEY="key"
-export REMOVEBG_API_KEY="key"
 
 # Define absolute directory path
 ABSOLUTE_DIR="/path/to/your/project"

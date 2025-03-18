@@ -1,8 +1,6 @@
 @echo off
 REM Set environment variables from .cursor/mcp.json
 set GEMINI_API_KEY=key
-set FREEIMAGE_API_KEY=key
-set REMOVEBG_API_KEY=key
 
 REM Define absolute directory path
 set ABSOLUTE_DIR=/path/to/your/project
